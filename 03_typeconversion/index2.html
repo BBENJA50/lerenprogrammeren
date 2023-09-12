@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+</head>
+<body>
+<!--begin html-->
+<h1>Datatype conversion</h1>
+<h2>number, parseFloat, parseInt</h2>
+<h3>var, let, const</h3>
+<!--start html-->
+
+<!--<p>Uitbreiding: vraag nu ook het aantal bij te tellen geboortejaren op.</p>-->
+<!--<p>Uw leeftijd is:</p>-->
+<!--<p id="age"></p>-->
+<!--<p>Hoeveel jaren wens je erbij te tellen?</p>-->
+<!--<p id="years"></p>-->
+<!--<p>Uw resultaat is:</p>-->
+<!--<p id="myResult"></p>-->
+
+<p>Uitbreiding: Wijzig de prompt naar een formulier</p>
+
+
+<label for="">Enter your year of birth:</label>
+<input id="myYearOfBirth" type="text">
+<p></p>
+<label for="">How many years do you want to add?</label>
+<input id="extraYears" type="text">
+<p></p>
+<button id="activateTextbox" type="button">Send</button>
+
+<p>Uw resultaat is:</p>
+<p id="myResult"></p>
+
+
+<!--end html-->
+
+<!--begin javascript-->
+<script>
+    // let yearOfBirth = window.prompt("What is your year of birth");
+    // let extraYears = window.prompt("Hoeveel jaren wens je erbij te tellen?");
+    //
+    // // yearOfBirth = yearOfBirth + 1;
+    // yearOfBirthAfterSum = Number(yearOfBirth)+ Number(extraYears);
+    //
+    // document.getElementById("age").innerHTML = yearOfBirth;
+    // document.getElementById("years").innerHTML = extraYears;
+    // document.getElementById("myResult").innerHTML = yearOfBirthAfterSum;
+
+    document.getElementById("activateTextbox").onclick = function () {
+        let yearOfBirth = document.getElementById("myYearOfBirth").value;
+        let extraYears = document.getElementById("extraYears").value;
+
+        yearOfBirthAfterSum = Number(yearOfBirth) + Number(extraYears);
+        document.getElementById("myResult").innerHTML = yearOfBirthAfterSum;
+    }
+
+
+</script>
+<!--end javascript-->
+</body>
+</html>

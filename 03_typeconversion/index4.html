@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--start html-->
+<h1>CALCULATOR</h1>
+
+<input type="text" id="primary" style="width: 50px; height: 50px">
+<input type="text" id="secondary" style="width: 50px; height: 50px">
+<p></p>
+<button type="button" id="plus" style="height: 40px; width: 40px;"> + </button>
+<button type="button" id="minus" style="height: 40px; width: 40px"> - </button>
+<br>
+<button type="button" id="maal" style="height: 40px; width: 40px"> * </button>
+<button type="button" id="delen" style="height: 40px; width: 40px"> / </button>
+<p></p>
+<label for=""><b>RESULT: </b></label>
+<label id="result"></label>
+
+
+<!--end html-->
+
+<!--begin javascript-->
+<script>
+
+    document.getElementById("plus").onclick = function (){
+        // let primary = document.getElementById("primary").value;
+        // let secondary = document.getElementById("secondary").value;
+        // let result = Number(primary) + Number(secondary);
+        // onderstaande code is gelijk aan de 3 bovenstaande lijnen
+
+        document.getElementById("result").innerHTML = Number(document.getElementById("primary").value) + Number(document.getElementById("secondary").value);
+
+    }
+
+    document.getElementById("minus").onclick = function (){
+        let primary = document.getElementById("primary").value;
+        let secondary = document.getElementById("secondary").value;
+        let result = Number(primary) - Number(secondary);
+        document.getElementById("result").innerHTML = result;
+
+    }
+
+    document.getElementById("maal").onclick = function (){
+        let primary = document.getElementById("primary").value;
+        let secondary = document.getElementById("secondary").value;
+        let result = Number(primary) * Number(secondary);
+        document.getElementById("result").innerHTML = result;
+
+    }
+
+    document.getElementById("delen").onclick = function (){
+        let primary = document.getElementById("primary").value;
+        let secondary = document.getElementById("secondary").value;
+        let result = Number(primary) / Number(secondary);
+        document.getElementById("result").innerHTML = result;
+
+    }
+
+
+
+</script>
+<!--end javascript-->
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<!--//fibonacci optelling-->
+
+<button type="button" id="calculate"> CALCULATE </button>
+<p id="result"></p>
+
+
+</body>
+<script>
+
+    let vorigGetal = 0;
+    let huidigGetal = 1;
+
+    document.getElementById("calculate").onclick = function() {
+        let volgendGetal= vorigGetal + huidigGetal;
+        document.getElementById("result").innerHTML = Number(huidigGetal);
+
+        vorigGetal = huidigGetal;
+        huidigGetal = volgendGetal;
+        
+        console.log(vorigGetal);
+        console.log(huidigGetal);
+        console.log(volgendGetal);
+    }
+
+</script>
+</html>
