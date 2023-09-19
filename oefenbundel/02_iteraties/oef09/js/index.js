@@ -9,6 +9,6 @@ for (let i = 2; i<= eindGetal; i++){
         }
     }
     if (isPriemGetal){
-        document.write(i+" ");
+        document.write(i+", ");
     }
 }
