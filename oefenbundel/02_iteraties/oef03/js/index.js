@@ -1,12 +1,19 @@
 let aantalSterren = Number(prompt("Geef een even aantal sterren in: "));
 let ster = "";
+let j = 1;
+let k = 0;
 
-for (let i = 1; i<=aantalSterren; i++){
-    for (let j=1; j<=(aantalSterren/2); j++){
-        document.write(ster + "*" + "<br>");
+for (j; j <= (aantalSterren / 2); j++) {
+    document.write(ster + "*" + "<br>");
+    ster += "*";
+}
+
+for (let i = j-1;i>0;i--){
+    ster = "";
+    while (k<i){
         ster+="*";
-        console.log(j);
-        console.log(i);
-        console.log(ster);
+        k++;
     }
+    document.write(`${ster}<br>`);
+    k=0;
 }
