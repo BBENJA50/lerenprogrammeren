@@ -8,12 +8,12 @@ for (j; j <= (aantalSterren / 2); j++) {
     ster += "*";
 }
 
-for (let i = j-1;i>0;i--){
+for (let i = j - 1; i > 0; i--) {
     ster = "";
-    while (k<i){
-        ster+="*";
+    while (k < i) {
+        ster += "*";
         k++;
     }
     document.write(`${ster}<br>`);
-    k=0;
+    k = 0;
 }
